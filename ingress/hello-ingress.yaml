@@ -5,22 +5,18 @@ metadata:
   namespace: pco
   annotations:
     kubernetes.io/ingress.class: "nginx"
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    #nginx.ingress.kubernetes.io/rewrite-target: /
     #nginx.ingress.kubernetes.io/ssl-redirect: "true"
-    #nginx.ingress.kubernetes.io/add-base-url: "true"
+    nginx.ingress.kubernetes.io/add-base-url: "true"
 spec:
   rules:
   - host:  test.172.28.128.7.xip.io
     http:
       paths:
-      - path: /ok
-        backend:
-          serviceName: ok-service
-          servicePort: 8081
       - path: /hello
         backend:
-          serviceName: hello-service
-          servicePort: 8080    
+          serviceName: hello
+          servicePort: 8082    
 
 
 
