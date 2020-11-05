@@ -1,0 +1,78 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.40">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>chano21</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.17">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes class="com.google.common.collect.ImmutableList">
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>chano21</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+  </actions>
+  <queueId>3</queueId>
+  <timestamp>1603349409861</timestamp>
+  <startTime>1603349409895</startTime>
+  <result>ABORTED</result>
+  <duration>742335</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>ABORTED</result>
+    <script>podTemplate(label: &apos;builder&apos;,
+            containers: [
+                containerTemplate(name: &apos;gradle&apos;, image: &apos;gradle:5.6-jdk8&apos;, command: &apos;cat&apos;, ttyEnabled: true),
+            ]) {
+    node(&apos;builder&apos;) {
+        stage(&apos;Build&apos;) {
+            container(&apos;gradle&apos;) {
+                sh &quot;echo pipeline test&quot;
+            }
+        }
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>282869886</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>2292456785</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>4453301052</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>2151887425</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1265200160</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>9</iota>
+    <head>1:9</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

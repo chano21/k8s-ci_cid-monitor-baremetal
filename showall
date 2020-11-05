@@ -1,0 +1,8 @@
+kubectl get pods --all-namespaces
+echo "show pods"
+kubectl get svc --all-namespaces
+echo "show svcs"
+kubectl get ing --all-namespaces
+echo "show ings"
+kubectl get deploy --all-namespaces
+echo "show deployments"

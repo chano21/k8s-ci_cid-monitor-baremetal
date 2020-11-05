@@ -1,0 +1,159 @@
+Started by GitHub push by chano21
+Lightweight checkout support not available, falling back to full checkout.
+Checking out git git@github.com:chano21/jenkinstest.git into /var/jenkins_home/workspace/pipelinetest3@script to read Jenkinsfile
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+using credential 6e610eb3-9310-46c3-937e-252f9a72554b
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:chano21/jenkinstest.git # timeout=10
+Fetching upstream changes from git@github.com:chano21/jenkinstest.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress -- git@github.com:chano21/jenkinstest.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+Checking out Revision edbd516b013c0e479d814df2928078dfbd24af77 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f edbd516b013c0e479d814df2928078dfbd24af77 # timeout=10
+Commit message: "ngrok test"
+ > git rev-list --no-walk 1ff821d86061b5c14166190ec434539a13d6b129 # timeout=10
+[Checks API] No suitable checks publisher found.
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4LHgv8GZpoZLuGlNo8ye0yITh5irKaF130xYqZpYmZ8HAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4L2RORdBoT9dBBJtzaZGHSTCi2Z9XJ4vVetVrjlZt9ASAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] podTemplate
+[8mha:////4BCcInH07vMPH9PWeD9RB5Wk5Z1zzOISD/Bi1ovqzUIAAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4E+X9e5wt0r5sOeLHIu7V4QfnY73kQvfFtx+7cMP27mYAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] node
+Created Pod: pco/builder-g2cfk-frmbh
+[Normal][pco/builder-g2cfk-frmbh][Scheduled] Successfully assigned pco/builder-g2cfk-frmbh to node-2
+[Warning][pco/builder-g2cfk-frmbh][FailedMount] MountVolume.SetUp failed for volume "default-token-6scst" : failed to sync secret cache: timed out waiting for the condition
+[Normal][pco/builder-g2cfk-frmbh][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-frmbh][Created] Created container kubectl
+Still waiting to schedule task
+‘[8mha:////4MBVxdwxjT6xeiqyrbmbiQDtUFG0fjtrsT8pYCTug3sDAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY5/eT83ILSktQi/aTSzJyU1CLddKPktGzdtKLcpAx9AIraaSTTAAAA[0mbuilder-g2cfk-frmbh’ is offline
+[Normal][pco/builder-g2cfk-frmbh][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-frmbh][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-frmbh][Created] Created container docker
+[Normal][pco/builder-g2cfk-frmbh][Started] Started container docker
+[Normal][pco/builder-g2cfk-frmbh][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-frmbh][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-frmbh][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-5r8dm
+[Normal][pco/builder-g2cfk-5r8dm][Scheduled] Successfully assigned pco/builder-g2cfk-5r8dm to node-1
+[Normal][pco/builder-g2cfk-5r8dm][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-5r8dm][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-5r8dm][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-5r8dm][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-5r8dm][Created] Created container docker
+[Normal][pco/builder-g2cfk-5r8dm][Started] Started container docker
+[Normal][pco/builder-g2cfk-5r8dm][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-5r8dm][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-5r8dm][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-kx93r
+[Normal][pco/builder-g2cfk-kx93r][Scheduled] Successfully assigned pco/builder-g2cfk-kx93r to node-2
+[Normal][pco/builder-g2cfk-kx93r][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-kx93r][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-kx93r][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-kx93r][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-kx93r][Created] Created container docker
+[Normal][pco/builder-g2cfk-kx93r][Started] Started container docker
+[Normal][pco/builder-g2cfk-kx93r][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-kx93r][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-kx93r][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-gc0g3
+[Normal][pco/builder-g2cfk-gc0g3][Scheduled] Successfully assigned pco/builder-g2cfk-gc0g3 to node-2
+[Normal][pco/builder-g2cfk-gc0g3][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-gc0g3][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-gc0g3][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-gc0g3][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-gc0g3][Created] Created container docker
+[Normal][pco/builder-g2cfk-gc0g3][Started] Started container docker
+[Normal][pco/builder-g2cfk-gc0g3][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-gc0g3][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-gc0g3][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-8gxhj
+[Normal][pco/builder-g2cfk-8gxhj][Scheduled] Successfully assigned pco/builder-g2cfk-8gxhj to node-1
+[Normal][pco/builder-g2cfk-8gxhj][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-8gxhj][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-8gxhj][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-8gxhj][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-8gxhj][Created] Created container docker
+[Normal][pco/builder-g2cfk-8gxhj][Started] Started container docker
+[Normal][pco/builder-g2cfk-8gxhj][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-8gxhj][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-8gxhj][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-gwbf8
+[Normal][pco/builder-g2cfk-gwbf8][Scheduled] Successfully assigned pco/builder-g2cfk-gwbf8 to node-2
+[Normal][pco/builder-g2cfk-gwbf8][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-gwbf8][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-gwbf8][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-gwbf8][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-gwbf8][Created] Created container docker
+[Normal][pco/builder-g2cfk-gwbf8][Started] Started container docker
+[Normal][pco/builder-g2cfk-gwbf8][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-gwbf8][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-gwbf8][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-0qth8
+[Normal][pco/builder-g2cfk-0qth8][Scheduled] Successfully assigned pco/builder-g2cfk-0qth8 to node-2
+[Normal][pco/builder-g2cfk-0qth8][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-0qth8][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-0qth8][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-0qth8][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-0qth8][Created] Created container docker
+[Normal][pco/builder-g2cfk-0qth8][Started] Started container docker
+[Normal][pco/builder-g2cfk-0qth8][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-0qth8][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-0qth8][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-ghpwc
+[Normal][pco/builder-g2cfk-ghpwc][Scheduled] Successfully assigned pco/builder-g2cfk-ghpwc to node-1
+[Normal][pco/builder-g2cfk-ghpwc][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-ghpwc][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-ghpwc][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-ghpwc][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-ghpwc][Created] Created container docker
+[Normal][pco/builder-g2cfk-ghpwc][Started] Started container docker
+[Normal][pco/builder-g2cfk-ghpwc][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-ghpwc][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-ghpwc][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-flxp9
+[Normal][pco/builder-g2cfk-flxp9][Scheduled] Successfully assigned pco/builder-g2cfk-flxp9 to node-2
+[Normal][pco/builder-g2cfk-flxp9][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-flxp9][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-flxp9][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-flxp9][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-flxp9][Created] Created container docker
+[Normal][pco/builder-g2cfk-flxp9][Started] Started container docker
+[Normal][pco/builder-g2cfk-flxp9][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-flxp9][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-flxp9][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-k95q1
+[Normal][pco/builder-g2cfk-k95q1][Scheduled] Successfully assigned pco/builder-g2cfk-k95q1 to node-2
+[Normal][pco/builder-g2cfk-k95q1][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-k95q1][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-k95q1][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-k95q1][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-k95q1][Created] Created container docker
+[Normal][pco/builder-g2cfk-k95q1][Started] Started container docker
+[Normal][pco/builder-g2cfk-k95q1][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-k95q1][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-k95q1][Started] Started container jnlp
+Created Pod: pco/builder-g2cfk-glmkq
+[Normal][pco/builder-g2cfk-glmkq][Scheduled] Successfully assigned pco/builder-g2cfk-glmkq to node-1
+[Normal][pco/builder-g2cfk-glmkq][Pulled] Container image "lachlanevenson/k8s-kubectl:v1.15.3" already present on machine
+[Normal][pco/builder-g2cfk-glmkq][Created] Created container kubectl
+[Normal][pco/builder-g2cfk-glmkq][Started] Started container kubectl
+[Normal][pco/builder-g2cfk-glmkq][Pulled] Container image "docker" already present on machine
+[Normal][pco/builder-g2cfk-glmkq][Created] Created container docker
+[Normal][pco/builder-g2cfk-glmkq][Started] Started container docker
+[Normal][pco/builder-g2cfk-glmkq][Pulled] Container image "jenkins/inbound-agent:4.3-4" already present on machine
+[Normal][pco/builder-g2cfk-glmkq][Created] Created container jnlp
+[Normal][pco/builder-g2cfk-glmkq][Started] Started container jnlp
+Aborted by [8mha:////4B8TVERftd8BkHJ8Iz4umBo1/qyPkPeLPov/XBlhbbY4AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL95IzEvHwjQwDoMd80wgAAAA==[0mchanopark
+[8mha:////4C5GmG2m1qrRicLHjJU5pAhKwLWDV7WncczZyBlNFbAvAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbaWOsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/QeYbFEMvAAAAA==[0m[Pipeline] // node
+[8mha:////4BxvZ1xv9cKiIj9J18PlL3/7AEiHvkLxI5KRdtIDgNXZAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmFgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHOMBdihdv8BvnU2RrwAAAA=[0m[Pipeline] }
+[8mha:////4FL/D+j3+EgG7jr8Tcql8gPnr3tSRR63xWIZCUuXNk9BAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRb2JgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHOMBdihdv8BzHcCWrwAAAA=[0m[Pipeline] // podTemplate
+[8mha:////4JN4MOGorJ9AaM0HXxC8+Iy8SQ0Llf83zzHjoX9gPt+gAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSb2BljZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j/qbmUQvAAAAA==[0m[Pipeline] End of Pipeline
+[Checks API] No suitable checks publisher found.
+Finished: ABORTED

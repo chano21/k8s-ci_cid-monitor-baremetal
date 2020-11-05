@@ -1,0 +1,23 @@
+Started on Nov 2, 2020 4:50:57 PM
+Started by event from 10.0.2.15 ⇒ http://webhook.socketxp.com:8080/github-webhook/ on Mon Nov 02 16:50:56 UTC 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision 5a1907d6945050f5346ed44d7ce2c6696fd1b30f (origin/main)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+using credential 6e610eb3-9310-46c3-937e-252f9a72554b
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repositories
+ > git config remote.origin.url git@github.com:chano21/jenkinstest.git # timeout=10
+Fetching upstream changes from git@github.com:chano21/jenkinstest.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress -- git@github.com:chano21/jenkinstest.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Polling for changes in
+Seen branch in repository origin/main
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+ > git log --full-history --no-abbrev --format=raw -M -m 5a1907d6945050f5346ed44d7ce2c6696fd1b30f..88152913bf660e3df6ed74f697c754931a8b65f6 # timeout=10
+ERROR: no such computer builder-vb6wv-b6sgg
+Done. Took 2.9 sec
+Changes found

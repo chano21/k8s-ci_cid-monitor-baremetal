@@ -1,0 +1,10 @@
+commit 6aa84a655f9e1cd61f9d2fc536a31febd05d6c5d
+tree c5795d7b955b3ec60733e0a01eaa8309736d41a8
+parent 0833f037720ed3092899507f0e9e681be3e0583b
+author parchano <chano22@naver.com> 2020-10-27 19:34:43 +0900
+committer parchano <chano22@naver.com> 2020-10-27 19:34:43 +0900
+
+    dockerfile edit
+
+
+:100644 100644 b516a4af1baf73057c52c74152c8ac28451c02bd 16724c6d549eaf7c1abf4d86dbf214c141b768b9 M	Dockerfile

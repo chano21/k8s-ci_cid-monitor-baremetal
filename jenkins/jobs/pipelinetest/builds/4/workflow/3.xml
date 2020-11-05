@@ -1,0 +1,51 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.83">
+    <parentIds>
+      <string>2</string>
+    </parentIds>
+    <id>3</id>
+    <descriptorId>org.csanchez.jenkins.plugins.kubernetes.pipeline.PodTemplateStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.83">
+      <arguments>
+        <entry>
+          <string>containers</string>
+          <list>
+            <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@1.20">
+              <symbol>containerTemplate</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>name</string>
+                  <string>gradle</string>
+                </entry>
+                <entry>
+                  <string>image</string>
+                  <string>gradle:5.6-jdk8</string>
+                </entry>
+                <entry>
+                  <string>command</string>
+                  <string>cat</string>
+                </entry>
+                <entry>
+                  <string>ttyEnabled</string>
+                  <boolean>true</boolean>
+                </entry>
+              </arguments>
+            </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+          </list>
+        </entry>
+        <entry>
+          <string>label</string>
+          <string>builder</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1603716231193</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

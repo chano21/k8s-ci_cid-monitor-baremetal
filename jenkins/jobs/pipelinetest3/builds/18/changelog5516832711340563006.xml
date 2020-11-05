@@ -1,0 +1,10 @@
+commit fc40681f516bf1b610dd328b8b7cd3441edcc34b
+tree 436a934ae0084b0c6d8d525d7083cfe49c276d63
+parent 3b3b643a747663331155032c330d3fb94b332ed1
+author parchano <chano22@naver.com> 2020-11-06 01:47:14 +0900
+committer parchano <chano22@naver.com> 2020-11-06 01:47:14 +0900
+
+    add namespace
+
+
+:100644 100644 3eacfe6bca42645273cd3f98e338991c63f640e9 e33a67519b53045554bef0bd70a00f199f581b18 M	kubernetes/deployment.yaml
